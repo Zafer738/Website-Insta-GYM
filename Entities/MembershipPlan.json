@@ -1,0 +1,40 @@
+{
+  "name": "MembershipPlan",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Plan name"
+    },
+    "tier": {
+      "type": "string",
+      "enum": [
+        "basic",
+        "standard",
+        "premium"
+      ],
+      "description": "Plan tier"
+    },
+    "price_monthly": {
+      "type": "number",
+      "description": "Monthly price"
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of included features"
+    },
+    "is_popular": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether this is the most popular plan"
+    }
+  },
+  "required": [
+    "name",
+    "tier",
+    "price_monthly"
+  ]
+}
