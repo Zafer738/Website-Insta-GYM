@@ -1,0 +1,44 @@
+{
+  "name": "ClassBooking",
+  "type": "object",
+  "properties": {
+    "class_name": {
+      "type": "string",
+      "description": "Name of the booked class"
+    },
+    "trainer_name": {
+      "type": "string",
+      "description": "Name of the trainer"
+    },
+    "schedule_slot_id": {
+      "type": "string",
+      "description": "ID of the schedule slot"
+    },
+    "day_of_week": {
+      "type": "string",
+      "description": "Day of the booking"
+    },
+    "time_slot": {
+      "type": "string",
+      "description": "Time of the booking"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "confirmed",
+        "pending",
+        "cancelled"
+      ],
+      "default": "confirmed",
+      "description": "Booking status"
+    },
+    "member_email": {
+      "type": "string",
+      "description": "Email of the member"
+    }
+  },
+  "required": [
+    "class_name",
+    "member_email"
+  ]
+}
