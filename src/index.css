@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 4%;
+    --foreground: 214 32% 91%;
+    --card: 0 0% 7%;
+    --card-foreground: 214 32% 91%;
+    --popover: 0 0% 7%;
+    --popover-foreground: 214 32% 91%;
+    --primary: 18 100% 56%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 226 100% 59%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 214 20% 69%;
+    --accent: 226 100% 59%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 18 100% 56%;
+    --chart-1: 18 100% 56%;
+    --chart-2: 226 100% 59%;
+    --chart-3: 214 32% 91%;
+    --chart-4: 0 0% 45%;
+    --chart-5: 18 80% 40%;
+    --radius: 0.25rem;
+    --sidebar-background: 0 0% 5%;
+    --sidebar-foreground: 214 32% 91%;
+    --sidebar-primary: 18 100% 56%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 10%;
+    --sidebar-accent-foreground: 214 32% 91%;
+    --sidebar-border: 0 0% 18%;
+    --sidebar-ring: 18 100% 56%;
+
+    --font-heading: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  .dark {
+    --background: 0 0% 4%;
+    --foreground: 214 32% 91%;
+    --card: 0 0% 7%;
+    --card-foreground: 214 32% 91%;
+    --popover: 0 0% 7%;
+    --popover-foreground: 214 32% 91%;
+    --primary: 18 100% 56%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 226 100% 59%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 214 20% 69%;
+    --accent: 226 100% 59%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 18 100% 56%;
+    --chart-1: 18 100% 56%;
+    --chart-2: 226 100% 59%;
+    --chart-3: 214 32% 91%;
+    --chart-4: 0 0% 45%;
+    --chart-5: 18 80% 40%;
+    --sidebar-background: 0 0% 5%;
+    --sidebar-foreground: 214 32% 91%;
+    --sidebar-primary: 18 100% 56%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 10%;
+    --sidebar-accent-foreground: 214 32% 91%;
+    --sidebar-border: 0 0% 18%;
+    --sidebar-ring: 18 100% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+}
