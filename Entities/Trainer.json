@@ -1,0 +1,42 @@
+{
+  "name": "Trainer",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Trainer full name"
+    },
+    "specialty": {
+      "type": "string",
+      "description": "Area of expertise"
+    },
+    "bio": {
+      "type": "string",
+      "description": "Short biography"
+    },
+    "experience_years": {
+      "type": "number",
+      "description": "Years of experience"
+    },
+    "certifications": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of certifications"
+    },
+    "photo_url": {
+      "type": "string",
+      "description": "Trainer photo URL"
+    },
+    "available": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether the trainer is available for booking"
+    }
+  },
+  "required": [
+    "name",
+    "specialty"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "GalleryImage",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Image title"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Image URL"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "facility",
+        "training",
+        "events",
+        "equipment"
+      ],
+      "description": "Image category"
+    }
+  },
+  "required": [
+    "title",
+    "image_url"
+  ]
+}
