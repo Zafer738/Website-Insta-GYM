@@ -1,0 +1,53 @@
+{
+  "name": "GymClass",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the class"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "yoga",
+        "hiit",
+        "strength_training",
+        "cardio"
+      ],
+      "description": "Class category"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the class"
+    },
+    "duration_minutes": {
+      "type": "number",
+      "description": "Duration in minutes"
+    },
+    "intensity": {
+      "type": "string",
+      "enum": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "description": "Intensity level"
+    },
+    "trainer_id": {
+      "type": "string",
+      "description": "ID of the assigned trainer"
+    },
+    "max_capacity": {
+      "type": "number",
+      "description": "Maximum number of participants"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Class image URL"
+    }
+  },
+  "required": [
+    "name",
+    "category"
+  ]
+}
