@@ -1,0 +1,52 @@
+{
+  "name": "ScheduleSlot",
+  "type": "object",
+  "properties": {
+    "class_id": {
+      "type": "string",
+      "description": "ID of the gym class"
+    },
+    "class_name": {
+      "type": "string",
+      "description": "Name of the class"
+    },
+    "trainer_name": {
+      "type": "string",
+      "description": "Name of the trainer"
+    },
+    "day_of_week": {
+      "type": "string",
+      "enum": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday",
+        "sunday"
+      ],
+      "description": "Day of the week"
+    },
+    "start_time": {
+      "type": "string",
+      "description": "Start time (e.g. 09:00)"
+    },
+    "end_time": {
+      "type": "string",
+      "description": "End time (e.g. 10:00)"
+    },
+    "spots_available": {
+      "type": "number",
+      "description": "Number of available spots"
+    },
+    "max_spots": {
+      "type": "number",
+      "description": "Maximum spots"
+    }
+  },
+  "required": [
+    "class_name",
+    "day_of_week",
+    "start_time"
+  ]
+}
